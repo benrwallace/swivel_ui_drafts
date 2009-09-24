@@ -1,0 +1,97 @@
+/*:::::::::::::::::::: New Sharing Flow Mockup Styles ::::::::::::::::::::::*/
+/*::::::::::::::::::: Nick L - nicklewislive@gmail.com :::::::::::::::::::::*/
+
+
+/*..... Dummy Chart (Fixed Width) .....*/
+#chart_sample {width:1318px; margin:0 auto;}
+
+/*.....  Style Overrides (Mods) .....*/
+#nav #subnav {border-bottom:none; color:#000000; padding:0px 20px 10px; text-align:left;}
+#nav {background:url('images/header/header_bg.png') repeat-x;}
+#nav .tab_set {height:45px;}
+#nav #subnav h1 .breadcrumb, #nav #subnav h2 .breadcrumb {margin:0 0 5px 0;}
+#nav #subnav h2 select {font-size:13px;}
+#nav #subnav .controls input[type="search"] {font-size:12px;margin-top:3px;}
+.unit {float:left;}
+.clear {clear:both;}
+.hidden {visibility:hidden;}
+
+/*..... Header .....*/
+.draft {color:#4c8acc; font-size:14px;}
+#button-action-menu {padding-top:10px;}
+#button-action-menu li {float:left; margin:0 0 0 8px; padding:3px; position:relative;}
+#button-action-menu li .icon {display:block; margin:0; color:#525252; padding: 7px 0 0 35px;}
+
+
+/*....Sub Navigation & Drop Downs....*/
+
+/*Parents*/
+.edit {width:80px;}
+.edit .icon {background:url('images/header/icons/edit.png') no-repeat; height:23px;  }
+.edit .icon:hover {background:url('images/header/icons/edit.png') 0 -30px no-repeat;}
+.share {width:85px;}
+.share .icon {background:url('images/header/icons/share.png') no-repeat; height:23px;}
+.share .icon:hover {background:url('images/header/icons/share.png') 0 -31px no-repeat;}
+.share .subWrapper.active a {background:url('images/header/icons/share.png')0 -61px no-repeat;}
+.duplicate {width:118px;}
+.duplicate .icon {background:url('images/header/icons/duplicate.png') no-repeat; height:24px;}
+.duplicate .icon:hover,.duplicate .subWrapper.active a {background:url('images/header/icons/duplicate.png') 0 -31px no-repeat;}
+.download {width:118px; padding:2px 10px 3px 5px;  border-top:1px solid #e9e9e9; }
+.download .icon {background:url('images/header/icons/download.png') no-repeat; height:23px;}
+.download .icon:hover {background:url('images/header/icons/download.png')  0 -30px no-repeat; }
+.delete {width:80px;}
+.delete .icon {background:url('images/header/icons/delete.png') 0 2px no-repeat; height:23px;}
+.delete .icon:hover,.delete .subWrapper.active a {background:url('images/header/icons/delete.png') 0 -30px no-repeat;}
+
+/*Sub*/
+.subWrapper,.subWrapper-o {width:97%; padding:2px 10px 3px 5px;  border-top:1px solid #e9e9e9;} {width:97%; padding:2px 10px 3px 5px;  border-top:1px solid #e9e9e9;}
+.sub { background:#fff; padding:8px; width:275px; position:absolute;  font-size: 13px;left:3px; z-index:1000; border-top: none;border-right:1px solid #8f8f8f; border-bottom:1px solid #868686; }
+.sub h3  {font-weight:bold;}
+.sub input {font-size:12px;}
+.sub textarea{font-size:12px; margin-top:8px;}
+.ui-state-default a.title {color:#3079c6; font-size:13px;}
+.ui-state-active a.title {color:#000; font-size:13px;}
+.active {background:#fff; border-right:1px solid #8f8f8f; }
+.ui-accordion-content, .ui-corner-all {margin-bottom:10px;}
+.ui-accordion .ui-accordion-content {padding:12px;}
+.share-desc,.sub_desc {font-size:12px; margin:0;}
+.ui-accordion .ui-accordion-content label {font-size:13px;}
+.ui-accordion .ui-accordion-content .label  {color:#3079C6; font-weight:bold;}
+.ui-accordion .ui-accordion-content a {color:#3079C6;}
+.share_buttons {float:right;}
+.share_submit {display:inline; margin-right:5px;}
+.share_cancel {display:inline; background:#A0A0A0; color:#fff;}
+#duplicate_sub,#delete_sub {padding:10px;}
+#duplicate_sub p {margin:4px 0 0 0;}
+#duplicate_sub h3,#delete_sub h3 {color:#4c8acc;}
+.dup_name {font-size:13px; font-weight:bold;}
+#duplicate_name {font-size:14px; margin-bottom:6px; width:98%;}
+#duplicate_sub .share_buttons ,#delete_sub .share_buttons {margin-top:8px;}
+.close {float:right; font-weight:bold;}
+.input_grey {width:95%;}
+.choose_embed {margin:9px 0 0 0;}
+#embed_choices li {margin-right:15px;}
+#embed_sizes .small {margin:0; font-size:10px; color:#424242;}
+#embed_sizes {font-size:13px;}
+.sub #l, .sub #m, .sub #s {display:none;}
+#new_group {margin-bottom:6px; display:none;}
+#new_group p {margin:0;}
+
+/*Search*/
+.search {background:url('images/search_bg.png') no-repeat; width:202px; height:27px; border:1px solid #cdcdcd; margin-top: 16px;}
+.search input {background:none; border:none;  padding-left:30px; font-size:14px;}
+
+/*Draft Greeting*/
+#draft_greeting {display:none;}
+#greeting_content {color:#323232;}
+#greeting_content h3 {font-weight:bold; font-size:17px; margin:0 0 10px 0; color:#000;}
+#greeting_content h3 span {color:#228334;}
+#greeting_content h4 {font-size:15px; font-weight:bold; margin:0 0 5px 0;}
+#greeting_content p {margin:0; font-size:13px; font-weight:bold;}
+#greeting_content li {background:url('images/tick.png') no-repeat; padding-left:20px;  font-size:13px; margin:9px 0;}
+.greeting_link {color:#228334;  text-decoration: underline;font-weight:bold; font-size:14px;}
+#greeting_content a:hover {color:#0369BD}
+/*Misc*/
+.bold {font-weight:bold;}
+.small {font-weight:normal; font-size:11px; color:#666;}
+.note {color:#666;}

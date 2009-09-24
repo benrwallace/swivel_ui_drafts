@@ -1,0 +1,428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+  <link rel="apple-touch-icon" href="https://business.swivel.com/images/icons/apple-touch-icon.png">
+  <title>Swivel | This is my test chart </title>
+  <link rel="icon" type="image/png" href="https://business.swivel.com/favicon.ico">
+  <link href="swivel_toolbar_ui/application.css" media="all" rel="stylesheet" type="text/css">
+  
+
+ <!--Mockup Assets-->
+	<script src="swivel_toolbar_ui/js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="swivel_toolbar_ui/js/jquery-ui-1.7.2.custom.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="swivel_toolbar_ui/js/action-menu.js"></script>
+	<script  src="swivel_toolbar_ui/js/facybox.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="swivel_toolbar_ui/facybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="swivel_toolbar_ui/jquery-ui-1.7.2.custom.css" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="swivel_toolbar_ui/new_ui.css" type="text/css" />
+ <!--End Mockup Assets-->
+</head>
+<body class="charts charts-show">
+  <div id="page" class="charts charts-show">
+    <div id="nav">
+      <div class="inner tab_set">
+        <a href="https://business.swivel.com/" id="logo"><h2>Swivel</h2></a>
+
+        
+          
+            <ul class="sections">
+              <li><a href="https://business.swivel.com/home" class="home">Home</a></li>
+              <li><a href="https://business.swivel.com/recent" class="recents">Recent</a></li>
+              <li><a href="https://business.swivel.com/me" class="data">My Files</a></li>
+              <li><a href="https://business.swivel.com/groups" class="groups">Groups</a></li>
+              <li><a href="https://business.swivel.com/public" class="public">Public</a></li>
+            </ul>
+
+            <div id="login">
+              <a href="http://swivel.uservoice.com/" class="feedback" onclick="window.open(this.href);return false;">Feedback</a>
+              Nick Lewis
+              <a href="https://business.swivel.com/people/1014826/edit">Settings</a>
+              <a href="https://business.swivel.com/people/logout">Sign out</a>
+              <a href="https://business.swivel.com/people/1014826/edit"><img alt="" class="avatar" src="swivel_toolbar_ui/166208960a626b32a8ad0d9361f0a89a.png"></a>
+            </div>
+          
+          <div id="status"></div>
+        
+      </div>
+      
+        <div id="subnav" class="inner">
+          
+	<h2>
+	   	<div class="title-breadcrumb unit">
+	   		<div class="breadcrumb" id="breadcrumb">
+      		<a href="https://business.swivel.com/me?group=drafts">Drafts</a> ›
+    		<a href="https://business.swivel.com/me/charts?group=drafts">Charts</a> ›
+  		</div>
+			<span class="name">This is my test chart <span class="draft">(Draft)</span></span>
+	   </div>	
+	   	<div class="action-menu unit">
+	   		<ul id="button-action-menu">
+				<li class="edit"> 
+					<div class="subWrapper-o"><a href="#" class="icon">Edit</a></div>	
+				</li>
+				<li class="share">
+					<div class="subWrapper"><a href="#" class="icon">Share</a></div>
+					<div class="sub hidden">
+						<div class="sharing accordion" id="sharing_accordion">
+						<h3 class="ui-accordion-header ui-helper-reset ui-corner-top" id="s1">
+							<a href='#' class="title">Public Share</a>
+						</h3>
+						<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">
+							<p class="share-desc"><strong>Share your data with the public!</strong> We'll host your chart and make it searchable within our database. </p>
+							<p><label for="share_public" class="label">Make this public? : </label> <input id="share_public" name="share_public"  type="checkbox"/></p>
+							 <div class="share_buttons">
+							 	<button type="button" class="share_submit">Submit</button>
+								<button type="button" class="share_cancel cancel">Cancel</button>
+							 </div>
+						</div>
+						<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" id="s2">
+							<a href='#private-share' class="title">Private Share</a>
+						</h3>
+						<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+								<p class="share-desc"><strong>Share to a private group.</strong> Publish your chart to an invite-only group for private viewing. </p>
+								<p id="existing_group"><label for="share_existing_group">Share to existing group</label>
+									<select id="select_existing_group" name="share_existing_group"  type="checkbox"/>
+										<option>Work group</option>
+										<option>Facebook friends</option>
+										<option>Swivel</option>
+									</select>
+								</p>
+								
+									<p><a href="#" class="new_group">Create new group</a></p>
+									<div id="new_group">
+										<p class="group_name share-desc bold">Group Name:</p>
+										<p class="group_name"><input id="value" name="group_name" type="text" /></p>
+										<p class="group_invite share-desc bold">Invite friends: <br> <span class="small">Enter emails separated by commas</span></p>
+										<p class="group_invites"><textarea name="group_invites" rows="2"></textarea></p>
+									</div>
+								<div class="share_buttons">
+							 		<button type="button" class="share_submit">Submit</button>
+									<button type="button" class="share_cancel cancel">Cancel</button>
+							 	</div>
+						</div>
+						<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" id="s4">
+							<a href='#' class="title">Grab the link</a>
+						</h3>
+						<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+							<p class="share-desc"> Here's a link to this chart. Copy & Paste: </p>
+							<p><input class="input_grey" id="share_link" name="share_link" value="http://business.swivel.com/charts/6658-High-Unemployment-Helps-You-Live-Longer" type="text" /></p>
+						</div>
+						<h3 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" id="s3">
+							<a href='#' class="title">Embed the HTML</a>
+						</h3>
+						<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+							<p class="share-desc"> Embed a chart into your website or blog. Choose a format below and copy/paste the html: </p>
+							<p class="share-desc choose_embed"><strong>Choose Format:</strong></p>
+							<ul id="embed_choices">
+								<li><label for="embed_interactive" class="label">Interactive:</label> <input id="embed_interactive" name="embed_format" type="radio" /></li>
+								<li><label for="embed_interactive" class="label">Image:</label> <input id="embed_image" name="embed_format" type="radio" /></li>
+							</ul>
+							<p class="share-desc choose_embed"><strong>Choose Size:</strong></p>
+							<p class="choose_embed">
+								<select name="embed_sizes" id="embed_sizes">
+								  <option value="0" selected>---select---</option>
+								  <option value="l">Large (640 x 400)</option>
+								  <option value="m">Medium (420 x 350)</option>
+								  <option value="s">Small (320 x 275)</option>
+								</select>
+							</p>
+							<div id="l" class="embed_size">
+							  <textarea name="Name" rows="8" ><iframe style='overflow:hidden; width:320px; height:275px;' src='https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D&embed=%7B%22fontSize%22%3A%207%7D'><p>Iframe</p></iframe></textarea>
+							</div>
+							<div id="m" class="embed_size">
+								<textarea name="Name" rows="8" ><iframe style='overflow:hidden; width:320px; height:275px;' src='https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D&embeDKSLDKSL:DKSskdl;skl;dkl;sd'><p>Iframe</p></iframe></textarea>
+							</div>
+							<div id="s" class="embed_size">
+								<textarea name="Name" rows="8" ><iframe style='overflow:hidden; width:320px; height:275px;' src='https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D&embed=923938JHKDjklsdjklsd'><p>Iframe</p></iframe></textarea>
+							</div>
+						</div>
+
+					</div>
+						<div class="close">
+							<a href="#">Close</a>
+						</div>
+					</div>
+				</li>
+				<li class="duplicate">
+					<div class="subWrapper"><a href="#" class="icon">Duplicate</a></div>
+					<div class="sub hidden">
+						<div id="duplicate_sub" class="ui-widget">
+							<h3>Duplicate this chart</h3>
+							<p class="dup_name">Name</p>
+							<p><input id="duplicate_name" type="text" name="duplicate_name" value="Copy of a Simple Chart by Nick" /></p>
+							<p class="note"> This chart will be saved to your drafts.</p>
+							 <div class="share_buttons">
+							 	<button type="button" class="share_submit">Duplicate</button>
+								<button type="button" class="share_cancel cancel">Cancel</button>
+							 </div>
+						</div>
+					</div>
+				</li>
+				<li class="download">
+					<div class="subWrapper-o"><a href="#" class="icon">Download</a></div>
+				</li>
+				<li class="delete">
+					<div class="subWrapper"><a href="#" class="icon">Delete</a></div>
+					<div class="sub hidden">
+						<div id="delete_sub" class="ui-widget">
+							<h3>Delete this chart</h3>
+							<p class="sub_desc">Are you sure you want to delete this chart?</p>
+							 <div class="share_buttons">
+							 	<button type="button" class="share_submit">Delete</button>
+								<button type="button" class="share_cancel cancel">Cancel</button>
+							 </div>
+						</div>
+					</div>
+					
+				</li>
+			</ul>
+	   </div>
+	  	<div class="controls unit search">
+			<form action="/search" class="major" method="get">
+  			<input name="q" results="10" autosave="com.swivel.search" onfocus="if (this.value == 'Search') { $(this).clear(); }" onclick="$(this).activate(); return false;" type="search">
+		</form>
+		</div>
+		<div class="clear"></div>
+	</h2>
+
+        </div>
+      
+    </div>
+
+    <div class="inner" id="content_and_pullout">
+      <div id="content">
+   <div class="description">
+  
+</div>
+
+
+<div id="toolbar"><table class="toolbar"><tbody><tr><td class="custom"><button title="Toggle categories to display" class="with-arrow"><div>Categories</div></button><div id="" style="display: none;" class="menu checkbox"><ul class="dialog"><li><span id=""><input checked="checked" id="category_select_check_0" type="checkbox"><label for="category_select_check_0">&nbsp;Item A</label></span></li><li><span id=""><input checked="checked" id="category_select_check_1" type="checkbox"><label for="category_select_check_1">&nbsp;Item B</label></span></li><li><span id=""><input checked="checked" id="category_select_check_2" type="checkbox"><label for="category_select_check_2">&nbsp;Item C</label></span></li><li><span id=""><input checked="checked" id="category_select_check_3" type="checkbox"><label for="category_select_check_3">&nbsp;Item D</label></span></li><li><span id=""><input checked="checked" id="category_select_check_4" type="checkbox"><label for="category_select_check_4">&nbsp;Item E</label></span></li></ul></div></td><td class="spacer"></td><td class="spacer"></td><td class="separator"></td><td class="spacer"></td><td class="spacer"></td><td class="filter"><button class="with-arrow"><div>Filter</div></button><div style="display: none;" class="menu dialog"><form><ul class="filter"><li><input checked="checked" id="category_filter_all" name="category_filter" type="radio"><label for="category_filter_all">Show all categories</label></li><li><input id="category_filter_limit" name="category_filter" type="radio"><label for="category_filter_limit">Only show</label> <input value="1" id="category_filter_limit_value" type="text"> <label for="category_filter_limit">categories</label></li><li><input id="category_filter_select" name="category_filter" type="radio"><label for="category_filter_select">Show categories with:</label><br><select value="undefined" id="category_filter_select_lhs"><option selected="selected" value="default_0">Measure</option></select> <select value="undefined" id="category_filter_select_operator"><option value="1">Greater than</option><option value="0">Equal to</option><option selected="selected" value="-1">Less than</option></select> <input value="0" id="category_filter_select_rhs" type="text"></li></ul><div class="buttons"><input value="OK" type="submit"> <a onclick="return false;" href="#">Cancel</a></div></form></div></td><td class="spacer"></td><td class="spacer"></td><td class="separator"></td><td class="spacer"></td><td class="spacer"></td><td class="undefined">Sort</td><td class="spacer"></td><td class="dimension_order"><select><option selected="selected" value="original">Original</option><option value="alpha">Alphabetical</option><option value="series:default_0">By Measure</option></select></td><td class="spacer"></td><td class="orderSelect"><select disabled="disabled"><option selected="selected" value="0">Low to High</option><option value="1">High to Low</option></select></td></tr></tbody></table></div>
+
+<div class="box">
+  <div class="title"><h2>New chart</h2></div>
+  <div style="height: 17px;" id="mouseoverInfo">&nbsp;</div>
+  <div id="chart">
+	 <div id="chart_sample">
+		<img src="swivel_toolbar_ui/images/chart_sample.png" width="100%" alt="Chart Sample" />
+	 </div>
+  </div>
+  <div class="summary" id="summary">
+    <h3>Summary <span id="range"> for Item A to Item E</span></h3>
+    <table id="stats"><tbody><tr class="header"><th>Series</th><th>Low</th><th>High</th><th>Total</th><th>Average</th><th>Median</th><th>Std Dev</th></tr><tr class="even"><td><span style="background-color: rgb(64, 117, 190);" class="swatch">&nbsp;</span>&nbsp;Measure</td><td>2 <span class="dims">on Item A</span></td><td>10 <span class="dims">on Item E</span></td><td>30</td><td>6</td><td>6</td><td>3</td></tr></tbody></table>
+  </div>
+</div>
+
+<h4 class="source">
+  Data: <a href="https://business.swivel.com/grids/16820">Chart Data</a>
+</h4>
+
+<div id="comment_section_chart_6830">
+  <div id="comments_header_chart_6830" class="comments_header">
+    <div class="order">Order:
+      <a class="disabled" href="#" id="asc_chart_6830" onclick="Swivel.getCommentManager('chart_6830').rearrange('asc'); return false;">Chronological</a> |
+      <a class="" href="#" id="desc_chart_6830" onclick="Swivel.getCommentManager('chart_6830').rearrange('desc'); return false;">Most Recent</a>
+      
+    </div>
+    Notes on this chart
+    (<span id="comment_count_chart_6830">0</span>)
+  </div>
+  <div id="comments_chart_6830" class="comments">
+    
+  </div><form action="/charts/6830-This-is-my-test-chart/comments" class="new_comment" id="new_comment_chart_6830" method="post" onsubmit="new Ajax.Request('/charts/6830-This-is-my-test-chart/comments', {asynchronous:true, evalScripts:true, onComplete:function(request){$('new_comment_progress_chart_6830').fade()}, onFailure:function(request){Swivel.getCommentManager('chart_6830').failNewComment(request)}, onLoading:function(request){$('new_comment_progress_chart_6830').appear()}, onSuccess:function(request){Swivel.getCommentManager('chart_6830').insertNewComment(request)}, parameters:Form.serialize(this)}); return false;" style="display: none;"><div style="margin: 0pt; padding: 0pt; display: inline;"><input name="authenticity_token" value="yfuVvL08y7p9fgyLgfgj4FZQOILYaBKJeXu4w2U6QVc=" type="hidden"></div>
+        <p>
+        <label for="comment_body">Add your note below</label><br>
+        <textarea cols="40" id="comment_body_chart_6830" name="comment[body]" rows="20"></textarea>
+      </p>
+      <p>
+        <input name="commit" value="Add note" type="submit">
+        <a href="#" onclick="Swivel.getCommentManager('chart_6830').cancelNewComment(); return false;">Cancel</a>
+        <img alt="Progress_sm" class="progress" id="new_comment_progress_chart_6830" src="swivel_toolbar_ui/progress_sm.gif" style="display: none;">
+      </p>
+    </form><a class="new_comment last" href="#" id="add_a_note_chart_6830" onclick="Swivel.getCommentManager('chart_6830').toggleNewCommentForm(); return false;">Add a note</a>
+</div>
+<div id="embed" style="display: none;">
+  <h1>
+    <div class="buttons">
+      <input class="primary close" onclick="return false;;" value="Done" type="button">
+    </div>
+    Embed this chart
+  </h1>
+
+  <div id="embed-options">
+    <table>
+      <tbody><tr>
+        <th>Choose<br>a size:</th>
+        
+          <td class="size" onclick='chartsShow.getEmbedCode({embedUrl: "https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D", width: 640, height: 400, chartHeight: 280, fontSize: 10, thumb: "https://i.swivel.com/i?crop=640x400&amp;url=http%3A%2F%2Fbusiness.swivel.com%2Fcharts%2F6830-This-is-my-test-chart.embed%3Fsecret%3DeT12ZJg89ZmgNUQSiBtYTQ%253D%253D" , linkUrl:"https://business.swivel.com/charts/6830-This-is-my-test-chart"});'>
+            <span>Large</span><h3>640 x 400</h3>
+          </td>
+        
+          <td class="size" onclick='chartsShow.getEmbedCode({embedUrl: "https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D", width: 420, height: 350, chartHeight: 230, fontSize: 8, thumb: "https://i.swivel.com/i?crop=420x350&amp;url=http%3A%2F%2Fbusiness.swivel.com%2Fcharts%2F6830-This-is-my-test-chart.embed%3Fsecret%3DeT12ZJg89ZmgNUQSiBtYTQ%253D%253D" , linkUrl:"https://business.swivel.com/charts/6830-This-is-my-test-chart"});'>
+            <span>Medium</span><h3>420 x 350</h3>
+          </td>
+        
+          <td class="size" onclick='chartsShow.getEmbedCode({embedUrl: "https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D", width: 320, height: 275, chartHeight: 160, fontSize: 7, thumb: "https://i.swivel.com/i?crop=320x275&amp;url=http%3A%2F%2Fbusiness.swivel.com%2Fcharts%2F6830-This-is-my-test-chart.embed%3Fsecret%3DeT12ZJg89ZmgNUQSiBtYTQ%253D%253D" , linkUrl:"https://business.swivel.com/charts/6830-This-is-my-test-chart"});'>
+            <span>Small</span><h3>320 x 275</h3>
+          </td>
+        
+        
+          <td class="spacer">&nbsp;</td>
+          <th>Choose<br>a format:</th>
+          <td>
+            <label for="embed_chart">Interactive chart</label>
+            <p><input checked="checked" id="embed_chart" name="embed" onclick='chartsShow.getEmbedCode({embedUrl: "https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D", thumb: "https://i.swivel.com/i?url=http%3A%2F%2Fbusiness.swivel.com%2Fcharts%2F6830-This-is-my-test-chart.thumb%3Fsecret%3DeT12ZJg89ZmgNUQSiBtYTQ%253D%253D%26title%3Dtrue&amp;crop=420x350", linkUrl:"https://business.swivel.com/charts/6830-This-is-my-test-chart"});' value="chart" type="radio"></p>
+          </td>
+          <td>
+            <label for="embed_image">Image</label>
+            <p><input id="embed_image" name="embed" onclick='chartsShow.getEmbedCode({embedUrl: "https://business.swivel.com/charts/6830-This-is-my-test-chart.embed?secret=eT12ZJg89ZmgNUQSiBtYTQ%3D%3D", thumb: "https://i.swivel.com/i?url=http%3A%2F%2Fbusiness.swivel.com%2Fcharts%2F6830-This-is-my-test-chart.thumb%3Fsecret%3DeT12ZJg89ZmgNUQSiBtYTQ%253D%253D%26title%3Dtrue&amp;crop=420x350", linkUrl:"https://business.swivel.com/charts/6830-This-is-my-test-chart"});' value="image" type="radio"></p>
+          </td>
+        
+      </tr>
+    </tbody></table>
+  </div>
+  <div id="embed-preview">
+    <label for="embedCode">Preview</label>
+    <div id="embed-iframe"></div>
+  </div>
+  <div id="embed-code">
+    <label for="embedCode">Copy and paste this code</label>
+    <div id="embed-textarea">
+      <textarea id="embedCode" name="embedCode" onclick="this.activate();return false;" onfocus="this.activate();return false;" rows="4"></textarea>
+    </div>
+    <div id="embed-button">
+      <input class="primary close" onclick="return false;;" value="Done" type="button">
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+    </div>
+
+    
+      <div class="clear"></div>
+      <div id="footer">
+        <div class="inner">
+          <span>© 2009 Swivel</span>
+          <span><a href="http://blog.swivel.com/">Blog</a></span>
+          <span><a href="https://business.swivel.com/about/jobs">Jobs</a></span>
+          <span><a href="https://business.swivel.com/about/legal">Terms</a></span>
+          <span><a href="https://business.swivel.com/about/legal#privacy">Privacy</a></span>
+          <span><a href="https://business.swivel.com/about/security">Security</a></span>
+          <span><a href="https://business.swivel.com/about/faq">FAQ</a></span>
+          <span><a href="https://business.swivel.com/developers">Developers</a></span>
+        </div>
+      </div>
+    
+
+  </div>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script src="swivel_toolbar_ui/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1428680-2");
+    pageTracker._trackPageview();
+  </script>
+  <script src="swivel_toolbar_ui/getclicky.js" type="text/javascript"></script>
+
+
+			<div class="" style="border: 0pt none ; margin: 0pt; padding: 0pt; position: absolute; left: -10000px; top: 0pt; outline-color: -moz-use-text-color; outline-style: none; outline-width: 0pt; font-family: verdana; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-size-adjust: none; font-stretch: normal; -x-system-font: none;">12.3</div>
+			<div id="" style="overflow: visible; z-index: 101; top: 0px; left: 550px; display: none;" class="sheet-dialog">
+	<div id="details" style="">
+  		<h1>Share this chart</h1>
+
+  		<div class="form">
+
+  <form action="/group_assets/12051" class="major save_publish" id="edit_group_asset_12051" method="post" onsubmit="new Ajax.Updater('breadcrumb', '/group_assets/12051', {asynchronous:true, evalScripts:true, onComplete:function(request){Details.publishAsset();}, onLoading:function(request){new Effect.Appear(&quot;progress_icon&quot;,{});}, onSuccess:function(request){new Effect.Fade(&quot;progress_icon&quot;,{});}, parameters:Form.serialize(this)}); return false;"><div style="margin: 0pt; padding: 0pt; display: inline;"><input name="_method" value="put" type="hidden"><input name="authenticity_token" value="yfuVvL08y7p9fgyLgfgj4FZQOILYaBKJeXu4w2U6QVc=" type="hidden"></div>
+     <input id="group_asset_group_id" name="group_asset[group_id]" value="1015695" type="hidden">
+     <input id="draft_group_id" name="draft_group_id" value="1015695" type="hidden">
+     
+    <p>
+      <input checked="checked" id="publish_drafts" name="publish" onclick="Details.toggle();" value="drafts" type="radio">
+      <label for="publish_drafts">
+      Save in my drafts <span class="minor">(only you can view the chart)</span>
+      </label>
+      <br>
+
+    </p>
+    
+    <p>
+      <input id="publish_public" name="publish" onclick="Details.toggle();" value="public" type="radio">
+      <label for="publish_public">
+        Make public <span class="minor">(anyone can view the chart)</span>
+      </label>
+    </p>
+    <div style="display: none;"><input id="group_asset_submit" name="commit" value="Save changes" type="submit"></div>
+    
+      <p>
+        <span class="highlight">Share privately</span>
+        <a href="https://business.swivel.com/groups">Learn more</a>
+      </p>
+   <div>
+      <input onclick="Details.preSubmit();" value="Share" type="button">
+      <a class="close" href="#" onclick="return false;; return false;">Cancel</a>
+      <img alt="Progress_sm" class="progress" id="progress_icon" src="swivel_toolbar_ui/progress_sm.gif" style="display: none;">
+   </div>
+  </form>
+    </div>
+</div>
+</div>
+			<div id="" style="overflow: visible; z-index: 101; top: 0px; left: 332.5px; display: none;" class="sheet-dialog"><div id="duplicate" style="">
+			  <h1>
+			    Duplicate this chart
+			  </h1>
+				<div class="form">
+	  <form action="/charts?from_id=6830" class="major duplicate" method="post" name="dup"><div style="margin: 0pt; padding: 0pt; display: inline;"><input name="authenticity_token" value="yfuVvL08y7p9fgyLgfgj4FZQOILYaBKJeXu4w2U6QVc=" type="hidden"></div>
+	    <p>
+	      <label for="asset_name">Name</label><br>
+	      <input id="asset_name" name="asset[name]" size="30" value="Copy of This is my test chart" type="text">
+	    </p>
+
+	    <p> This chart will be saved in your drafts. </p>
+	    <div>
+	      <input id="asset_submit" name="commit" value="Duplicate" type="submit">
+	      <a class="close" href="#" onclick="return false;; return false;">Cancel</a>
+	    </div>
+	  </form>
+  </div>
+  			</div>
+</div>
+			<div id="" style="overflow: visible; z-index: 101; top: 0px; left: 506.5px; display: none;" class="sheet-dialog"><div id="delete" style="">
+			  	<h1>
+				    Delete this chart
+				  </h1>
+				  	<div class="form major">
+				    <p> Are you sure you want to delete “This is my test chart?”</p>
+				    <div>
+				      <form method="post" action="/charts/6830-This-is-my-test-chart" class="button-to"><div><input name="_method" value="delete" type="hidden"><input class="delete" value="Delete" type="submit"><input name="authenticity_token" value="yfuVvL08y7p9fgyLgfgj4FZQOILYaBKJeXu4w2U6QVc=" type="hidden"></div></form>
+				      <a class="close" href="#" onclick="return false;; return false;">Cancel</a>
+				      <img alt="Progress_sm" class="progress" id="progress_icon" src="swivel_toolbar_ui/progress_sm.gif" style="display: none;">
+				    </div>
+				  </div>
+			</div>
+		</div>
+	
+	<div id="draft_greeting">
+       <div id="greeting_content">
+       		<div id="greeting_logo">
+	       		<img src="https://business.swivel.com/images/header/logo.png" alt="Swivel" />
+	        </div>
+	        <h3><span>Good job!</span> Your chart is complete.</h3>
+			<h4>Here's what you can do next...</h4>
+			 <ul>
+			 	<li><a href="#s1" class="greeting_link">Make it public:</a>  Make your chart public and we'll add it to our database for the world to see.</li>
+				<li><a href="#s2" class="greeting_link"> Share it privately:</a> Easily share your chart privately with your own group of friends or colleageus</li>
+			 	<li><a href="#s3" class="greeting_link"> Embed it:</a>  Have a website or blog? Embed your using your own custom embed code.</li>
+			 	<li><a href='#s4' class="greeting_link"> Grab the link:</a> Grab the direct link and send it to friends via Twitter, IM, or Email. </li>
+			 </ul>
+		</div>
+	</div>
+	
+	</body>
+</html>
